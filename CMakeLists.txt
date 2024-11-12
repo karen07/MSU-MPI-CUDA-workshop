@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.6)
+project(mpi_cuda)
+enable_language(CUDA)
+find_package(MPI)
+add_compile_options()
+add_executable(mpi_cuda src/mpi_cuda.cu)
+install(TARGETS mpi_cuda DESTINATION /usr/bin)
+target_link_libraries(mpi_cuda MPI::MPI_C m)
