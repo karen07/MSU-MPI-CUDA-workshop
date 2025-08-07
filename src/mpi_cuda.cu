@@ -307,7 +307,7 @@ int main(int argc, char **argv)
         all_size[0] = all_size[1] = all_size[2] = atoi(argv[1]);
     }
 
-    double time_start;
+    double time_start = 0;
     MPI_Barrier(MPI_COMM_WORLD);
     if (rank == 0) {
         time_start = MPI_Wtime();
