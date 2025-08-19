@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.13)
-project(mpi-cuda)
+project(mpi-cuda-waves)
 enable_language(CUDA)
 find_package(MPI)
 add_compile_options()
