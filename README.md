@@ -1,16 +1,15 @@
 # MSU MPI CUDA workshop
 
-This repository contains a 3D wave-equation solver developed as an MSU parallel-programming workshop project.
-
-MPI decomposes the computational domain between processes, while CUDA performs the numerical update inside each process. Boundary data is copied between GPU and host memory around MPI exchanges.
-
-The program can produce VTK snapshots and prints timing information for the main stages of the calculation, so the repository also serves as a compact MPI + CUDA implementation example.
+A 3D wave-equation solver developed for an MSU parallel-programming workshop. MPI divides
+the domain between processes, while CUDA performs numerical updates on GPUs.
 
 ## Описание
 
-Этот репозиторий содержит решатель трехмерного волнового уравнения, разработанный как проект практикума МГУ по параллельному программированию.
+Решатель трёхмерного волнового уравнения, созданный для практикума МГУ по параллельному
+программированию. MPI распределяет расчётную область между процессами, а CUDA выполняет
+численные расчёты на GPU.
 
-MPI распределяет вычислительную область между процессами, а CUDA выполняет численное обновление внутри каждого процесса. При обменах MPI граничные данные копируются между памятью GPU и памятью хоста.
+При обменах MPI граничные данные копируются между памятью GPU и памятью хоста.
 
 Программа может создавать снимки VTK и выводит время выполнения основных этапов расчета, поэтому репозиторий также служит компактным примером реализации MPI + CUDA.
 
